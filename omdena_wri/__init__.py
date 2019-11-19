@@ -13,7 +13,7 @@ import os.path
 from omdena_wri.utils import download_bert
 
 # check if bert model is already downloaded
-assert not os.path.isfile('omdena_wri/static/coref_bert.hdf5'), "Pretrained Bert Model Not Found at omdena_wri/static/coref_bert.hdf5. Please Download it from this url: https://drive.google.com/file/d/13fGAjaPzEZO1aIMw__uatccWJY17MoBu/view"
+assert os.path.isfile('omdena_wri/static/coref_bert.hdf5'), "Pretrained Bert Model Not Found at omdena_wri/static/coref_bert.hdf5. Please Download it from this url: https://drive.google.com/file/d/13fGAjaPzEZO1aIMw__uatccWJY17MoBu/view"
 
 # load bert model
 bert_model = load_model('omdena_wri/static/coref_bert.hdf5', custom_objects=get_custom_objects())
