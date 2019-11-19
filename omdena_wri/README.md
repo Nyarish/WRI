@@ -3,13 +3,16 @@ This package combines following tasks
 
 1) Apply Coref Resolution to the text
 
-2) Use BERT trained on coref data to predict if given text is positive or negetive (pos=land/env conflict related; it'll required 1.2gb download)
+2) Use BERT trained on coref data to predict if given text is positive or negetive (pos=land/env conflict related; it'll require 1.2gb download)
 
 3) Topic Modeling for finding relevant topics
 
 4) Policy matching using cosine similarity
 
 ## How to Use
+
+First of all download this [pretrained bert model](https://drive.google.com/file/d/13fGAjaPzEZO1aIMw__uatccWJY17MoBu/view) from google drive, rename it to coref_bert.hdf5 and place it in the static directory.
+
 Check out this [Demo Notebook](demo_omdena_wri.ipynb) for quick overview.
 
 ```
